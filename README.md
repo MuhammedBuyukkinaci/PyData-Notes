@@ -158,12 +158,12 @@ from datetime import datetime
 import time
 
 def mydecorator(func):
-    def wrapper(func,*args, **kwargs):
+    def wrapper(*args, **kwargs):
         time_start= datetime.now()
         func()
         time_end = datetime.now()
         print(f"Time elapsed = {(time_end - time_start)}")
-    return wrapper(func)
+    return wrapper
 
 @mydecorator
 def wait_3_seconds():
