@@ -272,7 +272,7 @@ git add .dvc
 git commit -m "Initialize DVC"
 ```
 
-6)
+6) MLFlow is an alternative to DVC.
 
 
 
