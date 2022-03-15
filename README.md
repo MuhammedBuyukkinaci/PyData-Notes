@@ -103,6 +103,8 @@ autocorrelation_plot(a)
 
 ### Video 5 - Vincent D. Warmerdam: Untitled12.ipynb
 
+[Video Link](https://www.youtube.com/watch?v=yXGCKqo5cEY)
+
 ![Video 5 Cover](https://github.com/MuhammedBuyukkinaci/PyData-Notes/blob/master/images/005/005_video_ss.png)
 
 1) Contextual help is a property of Jupyter lab, which splits the screen by two. It is showing us the definitions of methods when cursur is on top of the method.
@@ -207,6 +209,8 @@ def print_hello():
 
 ### Video 6 - Satej Khedekar: A Python application to flag outliers in very high dimensional data
 
+[Video Link](https://www.youtube.com/watch?v=DinhTHoDRjk)
+
 ![Video 6 Cover](https://github.com/MuhammedBuyukkinaci/PyData-Notes/blob/master/images/006/006_000.png)
 
 1) ASML is a python programme to flag outliers in very high dimensional data.
@@ -236,4 +240,40 @@ def print_hello():
 8) A summary of what happened after outlier detection
 
 ![HDBSCAN](https://github.com/MuhammedBuyukkinaci/PyData-Notes/blob/master/images/006/006_006.jpeg)
+
+## Video 7 - Data versioning in machine learning projects - Dmitry Petrov
+
+![Video 7 Cover](https://github.com/MuhammedBuyukkinaci/PyData-Notes/blob/master/images/007/000.png)
+
+[Video Link](https://www.youtube.com/watch?v=BneW7jgB298)
+
+1) Data science is different than software engineering and software engineering is different than hardware design.
+
+2) [DVC](https://dvc.org/doc/start) is data version control and it is similar to Git of Sofware Engineering. [Official link](https://github.com/iterative/dvc)
+
+3) A simple pipeline in dvc is as follows:
+
+```
+# -d: input
+# -o: output
+# command: unzip -q images.zip
+
+dvc run -d images.zip -o images unzip -q images.zip
+
+
+```
+
+4) DVC faciliates logging, reproducing and sharing.
+
+5) After installing DVC, it should be initialized by `dvc init` and added to git by
+
+```
+git add .dvc
+git commit -m "Initialize DVC"
+```
+
+6)
+
+
+
 
