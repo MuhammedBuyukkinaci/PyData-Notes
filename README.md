@@ -275,5 +275,38 @@ git commit -m "Initialize DVC"
 6) MLFlow is an alternative to DVC.
 
 
+## Video 8 - Rob Story | Data Engineering Architecture at Simple
+
+![Video 8 Cover](https://github.com/MuhammedBuyukkinaci/PyData-Notes/blob/master/images/008/000.png)
+
+[Video Link](https://www.youtube.com/watch?v=9nX35zrN20E)
+
+1) DWH lets us collapse 5+ DB Servers into a 1 database
+
+2) Redshift is a DWH tool by Amazon. It is forked from postgresql.
+
+3) Redshift can parallelize both storage and query.
+
+4) Redshift table creation query is similar to postgresql table creation query. Except, Redshift has a distkey(distributing data based on selected column) and sortkey (sorting data based on selected column)
+
+5) For instance, if there are 3 nodes(computers) and distkey is user_id; one of nodes may expand faster. This may result to a disk spce problem. To solve this, use distkey even while creating table.
+
+6) In redshift, select only relevant columns from table, not to choose all columns.
+
+7) Postgresql stores data as rowwise. Redshift stores data as columnwise.
+
+8) Redshift has very efficient targeted data compression encoding schemes. Compression is so important for redshift. It lowers disk usage to a reasonable amount.
+
+9) Asyncio is a concurrent programming design in Python.
+
+10) Alembic is a table migration library.
+
+
+
+
+
+
+
+
 
 
