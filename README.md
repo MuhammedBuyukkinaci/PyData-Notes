@@ -301,6 +301,82 @@ git commit -m "Initialize DVC"
 
 10) Alembic is a table migration library.
 
+## Video 9 - Maciej Kula | Neural Networks for Recommender Systems
+
+![Video 9 Cover](./images/009/000.png)
+
+[Video Link](https://www.youtube.com/watch?v=ZkBQ6YA9E40)
+
+1) NN's are felexible in recommendation systems set up.
+
+![User Item Matrix](./images/009/001.jpeg)
+
+2) Siamese Neural Network for triplet (user, positive, negative) can be useful for ranking losses.
+
+![siamese](./images/009/002.jpeg)
+
+3) Instead of using all negatives, use sampled negatives which violates loss most.
+
+![sampled](./images/009/003.jpeg)
+
+4) Recommendation may be considered as sequence prediction If a user bought a,b,c,d
+
+| Input   | Output|
+| a       | b     |
+| a,b     | c     |
+| a,b,c   | d     |
+
+5) MRR, MAP, NDCG are some metrics for evaluation of recommendation systems.
+
+6) We can fir brief sequential data to LSTM and wait it yo predict perfectly. If predictions are wrong, the architecture is wrong probably.
+
+## Video 10 - Maciej Kula - Hybrid Recommender Systems in Python
+
+![Video 10 Cover](./images/010/000.png)
+
+[Video Link](https://www.youtube.com/watch?v=EgE0DUrYmo8)
+
+1) A user interaction matrix is enough to make recommendation by rowwise. Users having less distances between each other are calculated.
+
+![Video 10 Cover](./images/010/001.jpeg)
+
+2) Matrix Factorization is a key component of Ntflix Prize Winning Example.
+
+3) Matrix Factorization is domain agnostic and requires lots of data.
+
+4) Some drawback of Collaborative Filtering:
+
+- Large Product Inventory
+
+- Short Lived Products
+
+- Lots of new users
+
+- Lots of new products
+
+5) Content based filtering needs lots of data for each user.
+
+6) LightFM is a matrix factorization library in Python.
+
+7) Some Performanses onCross Vlidated Stat Exchange data, which user answers the questions and Metric is AUC.
+
+- Collaborative Filtering: 0.43
+
+- Content Based Fİltering: 0.66
+
+- LightFM: 0.71
+
+8) LightFM is useful in problems having lots of new users and lots of new items.
+
+9) BPR and WARP are loss functions in recommendation systems.
+
+10) Recommenders either attemp to predict a rating of an item by a user, or generate a ranked list of recommended items per user.
+
+
+
+
+
+
 
 
 
