@@ -372,6 +372,60 @@ git commit -m "Initialize DVC"
 
 10) Recommenders either attemp to predict a rating of an item by a user, or generate a ranked list of recommended items per user.
 
+## Video 11 - Hands on - Build a Recommender system: Camille Couturier 
+
+![Video 10 Cover](./images/011/000.png)
+
+[Video Link](https://www.youtube.com/watch?v=juU7m9rOAqo)
+
+1) COntent based recommendation systems are mostly unsupervised. THey are either cluster based or bbeighbor based.
+
+2) SVD is a matrix factorization technique used in recommendation systems.
+
+3) pd.DataFrame().pivot() is a way to reshape data based on indexes and columns.
+
+4) We can import svds via `from scipy.sparse.linalg import svds`
+
+5) SVD isn't scalable and filling nulls with 0 isn't sensible.
+
+6) WE can approximate SVD using gradient descent with existing data and and without filling nulls.
+
+R = P.Qt
+
+7) Surprise is a python library used for recommendation
+
+8) Content based RS is lacking over specification and surprise factor. A person watching GodFather 1 and GodFather 2 may not like GodFather 3.
+
+9) CF has 2 categories:
+
+- Model based: where 2 low ranked latent representations obtained
+
+- Memory based: Heuristic approaches not learning parameters like above but computing similarities based on items or users.
+
+10) Mostly offline metrics are used in evaluation of RS's. Clicks are implicit feedbacks.
+
+11) SOme baselines in RS's are memory based CF's and popularity based metrics.
+
+12) F1, Precision, Recall, MRR, MAP, NDCG are some metrics used in recommendation engines.
+
+13) Cold start problem is one of the most important challenges in RS's. It is more common in CF methods.
+
+14) Memory based CF isn't scalable, which means its computation procedure is costly.
+
+15) 2 categories of Content based approach:
+
+- Item based Content Based: User Features used to predict like, a different model for each item, less personalized and more robust
+
+- User based Content based: Item features used to predict like, a different model for each item, less robust and more personalized
+
+16) Model based CF assume a latent model for both user and item spaces. In content based filtering, these spaces are defined by humans(user features on item centered CB, item features on user centered CB)
+
+17) User Features and item features can be concatenated to train a NN.
+
+
+
+
+
 
 
 
